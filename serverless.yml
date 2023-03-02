@@ -8,8 +8,10 @@ provider:
   region: us-east-1
   environment:
     NODE_ENV: ${self:custom.secrets.NODE_ENV}
-    EMAIL: ${self:custom.secrets.EMAIL}
-    DOMAIN: ${self:custom.secrets.DOMAIN}
+    EMAIL_HAINARBEIT: ${self:custom.secrets.EMAIL_HAINARBEIT}
+    EMAIL_LOONEYS: ${self:custom.secrets.EMAIL_LOONEYS}
+    DOMAIN_HAINARBEIT: ${self:custom.secrets.DOMAIN_HAINARBEIT}
+    DOMAIN_LOONEYS: ${self:custom.secrets.DOMAIN_LOONEYS}
   iamRoleStatements:
     - Effect: "Allow"
       Action:
